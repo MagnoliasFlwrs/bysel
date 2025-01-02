@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s ease;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("./assets/fonts/SegoeUILight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url("./assets/fonts/SegoeUIRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url("./assets/fonts/SegoeUISemiBold.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url("./assets/fonts/SegoeUISemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url("./assets/fonts/SegoeUIBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.content {
+  max-width: 1752px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Segoe UI";
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+body.light-theme {
+  background: #F4F4F5;
+  color: #18232A;
+}
+body.dark-theme {
+  background: #18232A;
+  color: #fff;
+}
+body.dark-theme .header .content .header-container {
+  background: #25353F;
+}
+body.dark-theme .header .content .header-container .logo-column {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+body.dark-theme .header .content .header-container .logo-column .logo {
+  display: none;
+}
+body.dark-theme .header .content .header-container .logo-column .dark-theme-logo {
+  display: block;
+}
+body.dark-theme .header .content .header-container .logo-column .line {
+  width: 1px;
+  height: 40px;
+  flex-shrink: 0;
+  background: #D5D8DA;
+}
+body.dark-theme .header .content .header-container .logo-column .phone-container span {
+  color: #828E96;
+}
+body.dark-theme .header .content .header-container .logo-column .phone-container a {
+  color: #fff;
+}
+body.dark-theme .header .content .header-container .logo-column .phone-container .phone-select.active {
+  background: #25353F;
+}
+body.dark-theme .header .content .header-container .logo-column .phone-container .phone-select.active .ph-select p {
+  color: #fff;
+}
+body.dark-theme .header .content .header-container .logo-column .phone-container .phone-select .ph-select p {
+  color: #fff;
+}
+body.dark-theme .header .content .header-container .logo-column .phone-container .phone-select .phone-select-wrapper {
+  background: #25353F;
+}
+body.dark-theme .header .content .header-container .logo-column .phone-container .phone-select .phone-select-wrapper a {
+  color: #fff;
+}
+body.dark-theme .header .content .header-container .nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+body.dark-theme .header .content .header-container .nav a {
+  color: #fff;
+}
+
+.header .content .header-container {
+  display: flex;
+  padding: 20px 50px;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+  border-radius: 0px 0px 40px 40px;
+  background: #FFF;
+}
+.header .content .header-container .logo-column {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header .content .header-container .logo-column .dark-theme-logo {
+  display: none;
+}
+.header .content .header-container .logo-column .line {
+  width: 1px;
+  height: 40px;
+  flex-shrink: 0;
+  background: #D5D8DA;
+}
+.header .content .header-container .logo-column .phone-container {
+  display: flex;
+  flex-direction: column;
+}
+.header .content .header-container .logo-column .phone-container span {
+  color: #828E96;
+  font-family: "Segoe UI";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.header .content .header-container .logo-column .phone-container a {
+  color: #18232A;
+  font-family: "Segoe UI";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.header .content .header-container .logo-column .phone-container .phone-select {
+  position: relative;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+}
+.header .content .header-container .logo-column .phone-container .phone-select.active {
+  background: #fff;
+}
+.header .content .header-container .logo-column .phone-container .phone-select.active .ph-select {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.header .content .header-container .logo-column .phone-container .phone-select.active .ph-select.active::after {
+  transform: rotate(180deg);
+}
+.header .content .header-container .logo-column .phone-container .phone-select.active .ph-select p {
+  color: #18232A;
+  font-family: "Segoe UI";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+.header .content .header-container .logo-column .phone-container .phone-select .ph-select {
+  display: flex;
+}
+.header .content .header-container .logo-column .phone-container .phone-select .ph-select p {
+  color: #18232A;
+  font-family: "Segoe UI";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.header .content .header-container .logo-column .phone-container .phone-select .ph-select::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cpath d='M8.16749 10.3727C8.39065 10.1286 8.75245 10.1286 8.97561 10.3727L12.0001 13.6808L15.0246 10.3727C15.2478 10.1286 15.6096 10.1286 15.8328 10.3727C16.0559 10.6168 16.0559 11.0125 15.8328 11.2566L12.4042 15.0066C12.181 15.2507 11.8192 15.2507 11.5961 15.0066L8.16749 11.2566C7.94433 11.0125 7.94433 10.6168 8.16749 10.3727Z' fill='%23FF0033'/%3E%3C/svg%3E");
+  display: block;
+  transition: 0.3s ease;
+}
+.header .content .header-container .logo-column .phone-container .phone-select .phone-select-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  padding: 10px 5px;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 11;
+  gap: 10px;
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow: 0px 8px 9.2px -7px rgba(0, 0, 0, 0.25);
+  display: none;
+}
+.header .content .header-container .logo-column .phone-container .phone-select .phone-select-wrapper.active {
+  display: flex;
+}
+.header .content .header-container .logo-column .phone-container .phone-select .phone-select-wrapper a {
+  color: #18232A;
+  font-family: "Segoe UI";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: inline;
+  width: unset;
+  height: unset;
+}
+.header .content .header-container .nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header .content .header-container .nav a {
+  color: #18232A;
+  font-family: "Segoe UI";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.header .content .header-container .nav .lang {
+  cursor: pointer;
+  border-radius: 15px;
+  background: #828E96;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #FFF;
+  font-family: "Segoe UI";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  flex-shrink: 0;
+}
+.header .content .header-container .nav .lang:hover {
+  background: #18232A;
+}
+.header .content .header-container .nav .theme-mode {
+  display: flex;
+  align-items: center;
+}
+.header .content .header-container .nav .theme-mode .mode-icon {
+  display: none;
+}
+.header .content .header-container .nav .theme-mode .mode-icon.active {
+  cursor: pointer;
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */

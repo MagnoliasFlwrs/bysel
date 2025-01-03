@@ -5,10 +5,96 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body class="light-theme">
+    <div class="overlay"></div>
+    <div class="mobile-menu">
+        <div class="mobile-menu-container">
+            <div class="close-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#828E96"/>
+                </svg>
+            </div>
+            <div class="mobile-menu-body">
+                <a href="#" class="nav-link">Автомобили</a>
+                <div class="line"></div>
+                <a href="#" class="nav-link">Условия и доставка</a>
+                <div class="line"></div>
+                <a href="#" class="nav-link">Аксессуары</a>
+                <div class="line"></div>
+                <a href="#" class="nav-link">Контакты</a>
+                <div class="phone-container">
+                    <span class="chapter">Телефон в ОАЭ:</span>
+                    <div class="phone-inner">
+                        <span class="country">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
+                              <g clip-path="url(#clip0_305_2951)">
+                                <path d="M19 0H2C0.89543 0 0 0.89543 0 2V13C0 14.1046 0.89543 15 2 15H19C20.1046 15 21 14.1046 21 13V2C21 0.89543 20.1046 0 19 0Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10H21V15H0V10Z" fill="#151515"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H21V5H0V0Z" fill="#249F58"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V15H6V0H0Z" fill="#F93939"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_305_2951">
+                                  <rect width="21" height="15" rx="3" fill="white"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                        </span>
+                        <ul>
+                            <li><a href="tel:+97167671844">+971 (67) 67 18 44</a></li>
+                            <li><a href="tel:+971561555993">+971 (56) 1 555 993</a></li>
+                            <li><a href="tel:+971569553310">+971 (56) 9 553 310</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="phone-container">
+                    <span class="chapter">Телефон в казахстане:</span>
+                    <div class="phone-inner">
+                    <span class="country">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
+                          <rect width="21" height="15" rx="3" fill="#03BCDB"/>
+                          <path d="M11.5 9C12.8807 9 14 7.88071 14 6.5C14 5.11929 12.8807 4 11.5 4C10.1193 4 9 5.11929 9 6.5C9 7.88071 10.1193 9 11.5 9Z" fill="#FFDA2C"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 7L9 9L11.5 10L14 9L15 7V10L11.5 11L8 10V7Z" fill="#FFDA2C"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2.495C2 2.222 2.232 2 2.5 2C2.776 2 3 2.216 3 2.495V4.505C3 4.778 2.768 5 2.5 5C2.224 5 2 4.784 2 4.505V2.495ZM3 4.495C3 4.222 3.232 4 3.5 4C3.776 4 4 4.216 4 4.495V6.505C4 6.778 3.768 7 3.5 7C3.224 7 3 6.784 3 6.505V4.495ZM3 8.495C3 8.222 3.232 8 3.5 8C3.776 8 4 8.216 4 8.495V10.505C4 10.778 3.768 11 3.5 11C3.224 11 3 10.784 3 10.505V8.495ZM2 10.495C2 10.222 2.232 10 2.5 10C2.776 10 3 10.216 3 10.495V12.505C3 12.778 2.768 13 2.5 13C2.224 13 2 12.784 2 12.505V10.495ZM2 6.5C2 6.224 2.232 6 2.5 6C2.776 6 3 6.232 3 6.5C3 6.776 2.768 7 2.5 7C2.224 7 2 6.768 2 6.5ZM3 2.5C3 2.224 3.232 2 3.5 2C3.776 2 4 2.232 4 2.5C4 2.776 3.768 3 3.5 3C3.224 3 3 2.768 3 2.5ZM2 7.5C2 7.224 2.232 7 2.5 7C2.776 7 3 7.232 3 7.5C3 7.776 2.768 8 2.5 8C2.224 8 2 7.768 2 7.5ZM3 12.5C3 12.224 3.232 12 3.5 12C3.776 12 4 12.232 4 12.5C4 12.776 3.768 13 3.5 13C3.224 13 3 12.768 3 12.5ZM2 8.5C2 8.224 2.232 8 2.5 8C2.776 8 3 8.232 3 8.5C3 8.776 2.768 9 2.5 9C2.224 9 2 8.768 2 8.5Z" fill="#FFDA2C"/>
+                        </svg>
+                    </span>
+                        <ul>
+                            <li><a href="tel:+77758633455">+7 (775) 8 633 455</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="callback-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                        <path d="M21.4994 16.4767V19.1864C21.5036 20.2223 20.5722 21.0873 19.5264 20.9929C10.5 21 3.5 13.935 3.50706 4.96919C3.41287 3.92895 4.27358 3.00106 5.30811 3.00009H8.02325C8.46247 2.99577 8.88828 3.151 9.22131 3.43684C10.1681 4.24949 10.7771 7.00777 10.5428 8.10428C10.3599 8.96036 9.4969 9.55929 8.91019 10.1448C10.1986 12.4062 12.0746 14.2785 14.3405 15.5644C14.9272 14.9788 15.5273 14.1176 16.3851 13.935C17.4855 13.7008 20.2615 14.3106 21.0709 15.264C21.3579 15.6021 21.5104 16.0337 21.4994 16.4767Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Заказать звонок</span>
+                </button>
+                <div class="line"></div>
+                <div class="lang-container">
+                    <span>Язык:</span>
+                    <div class="lang">EN</div>
+                    <div class="lang active">RU</div>
+                </div>
+                <button class="theme-button">
+                    <span class="light-theme-icon mode-icon active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                          <path d="M9.36077 3.56465C9.6659 3.86977 9.74089 4.3362 9.54678 4.72158C9.04068 5.72644 8.75521 6.8621 8.75521 8.06732C8.75521 12.1814 12.0903 15.5165 16.2044 15.5165C17.4097 15.5165 18.5453 15.2311 19.5502 14.725C19.9356 14.5309 20.402 14.6059 20.7071 14.911C21.0122 15.2161 21.0872 15.6825 20.8931 16.0679C19.3396 19.1524 16.1428 21.2718 12.4492 21.2718C7.23056 21.2718 3 17.0412 3 11.8225C3 8.12894 5.11941 4.93214 8.20384 3.37864C8.58923 3.18454 9.05565 3.25953 9.36077 3.56465ZM6.8217 6.94135C5.68637 8.24916 5 9.95606 5 11.8225C5 15.9366 8.33513 19.2718 12.4492 19.2718C14.3157 19.2718 16.0226 18.5854 17.3304 17.4501C16.9611 17.494 16.5853 17.5165 16.2044 17.5165C10.9858 17.5165 6.75521 13.286 6.75521 8.06732C6.75521 7.68647 6.77779 7.31071 6.8217 6.94135Z" fill="#828E96"/>
+                        </svg>
+                    </span>
+                        <span class="dark-theme-icon mode-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                          <path d="M12 2.27148C12.5523 2.27148 13 2.7192 13 3.27148V4.27148C13 4.82377 12.5523 5.27148 12 5.27148C11.4477 5.27148 11 4.82377 11 4.27148V3.27148C11 2.7192 11.4477 2.27148 12 2.27148ZM19.0711 5.20041C19.4616 5.59093 19.4616 6.2241 19.0711 6.61462L18.364 7.32173C17.9735 7.71225 17.3403 7.71225 16.9498 7.32173C16.5593 6.93121 16.5593 6.29804 16.9498 5.90752L17.6569 5.20041C18.0474 4.80989 18.6806 4.80989 19.0711 5.20041ZM4.92893 5.20041C5.31945 4.80989 5.95262 4.80989 6.34314 5.20041L7.05025 5.90752C7.44077 6.29804 7.44077 6.93121 7.05025 7.32173C6.65972 7.71226 6.02656 7.71226 5.63603 7.32173L4.92893 6.61462C4.5384 6.2241 4.5384 5.59093 4.92893 5.20041ZM12 8.27148C9.79086 8.27148 8 10.0623 8 12.2715C8 14.4806 9.79086 16.2715 12 16.2715C14.2091 16.2715 16 14.4806 16 12.2715C16 10.0623 14.2091 8.27148 12 8.27148ZM6 12.2715C6 8.95778 8.68629 6.27148 12 6.27148C15.3137 6.27148 18 8.95778 18 12.2715C18 15.5852 15.3137 18.2715 12 18.2715C8.68629 18.2715 6 15.5852 6 12.2715ZM2 12.2715C2 11.7192 2.44772 11.2715 3 11.2715H4C4.55228 11.2715 5 11.7192 5 12.2715C5 12.8238 4.55228 13.2715 4 13.2715H3C2.44772 13.2715 2 12.8238 2 12.2715ZM19 12.2715C19 11.7192 19.4477 11.2715 20 11.2715H21C21.5523 11.2715 22 11.7192 22 12.2715C22 12.8238 21.5523 13.2715 21 13.2715H20C19.4477 13.2715 19 12.8238 19 12.2715ZM5.63603 17.2212C6.02656 16.8307 6.65972 16.8307 7.05025 17.2212C7.44077 17.6117 7.44077 18.2449 7.05025 18.6354L6.34314 19.3425C5.95262 19.7331 5.31945 19.7331 4.92893 19.3425C4.5384 18.952 4.5384 18.3189 4.92893 17.9283L5.63603 17.2212ZM16.9498 18.6354C16.5593 18.2449 16.5593 17.6117 16.9498 17.2212C17.3403 16.8307 17.9735 16.8307 18.364 17.2212L19.0711 17.9283C19.4616 18.3189 19.4616 18.952 19.0711 19.3425C18.6806 19.7331 18.0474 19.7331 17.6569 19.3425L16.9498 18.6354ZM12 19.2715C12.5523 19.2715 13 19.7192 13 20.2715V21.2715C13 21.8238 12.5523 22.2715 12 22.2715C11.4477 22.2715 11 21.8238 11 21.2715V20.2715C11 19.7192 11.4477 19.2715 12 19.2715Z" fill="white"/>
+                        </svg>
+                    </span>
+                    <span class="theme-button-text">Темная тема</span>
+                </button>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="content">
             <div class="header-container">
@@ -19,6 +105,7 @@
                     <a href="#" class="dark-theme-logo">
                         <img src="./assets/images/logo-dark-theme.png" alt="logo" width="90" height="80">
                     </a>
+                    <h1 class="description">Заказ авто <br>с доставкой</h1>
                     <div class="line"></div>
                     <div class="phone-container">
                         <span>телефоны в казахстане</span>
@@ -38,10 +125,19 @@
                     </div>
                 </div>
                 <div class="nav">
-                    <a href="#">Автомобили</a>
-                    <a href="#">Условия и доставка</a>
-                    <a href="#">Контакты</a>
+                    <a class="nav-link" href="#">Автомобили</a>
+                    <a class="nav-link" href="#">Условия и доставка</a>
+                    <a class="nav-link" href="#">Контакты</a>
                     <div class="lang">EN</div>
+                    <a href="#" class="phone-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20.9994 16.4767V19.1864C21.0036 20.2223 20.0722 21.0873 19.0264 20.9929C10 21 3 13.935 3.00706 4.96919C2.91287 3.92895 3.77358 3.00106 4.80811 3.00009H7.52325C7.96247 2.99577 8.38828 3.151 8.72131 3.43684C9.66813 4.24949 10.2771 7.00777 10.0428 8.10428C9.85987 8.96036 8.9969 9.55929 8.41019 10.1448C9.69858 12.4062 11.5746 14.2785 13.8405 15.5644C14.4272 14.9788 15.0273 14.1176 15.8851 13.935C16.9855 13.7008 19.7615 14.3106 20.5709 15.264C20.8579 15.6021 21.0104 16.0337 20.9994 16.4767Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <div class="burger-btn">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
                     <div class="theme-mode">
                         <span class="light-mode-icon mode-icon active">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
@@ -58,8 +154,582 @@
             </div>
         </div>
     </header>
-    <main></main>
+    <main>
+        <div class="hero-block">
+            <div class="swiper hero-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="img-container">
+                            <img class="light-theme-swiper-image" src="./assets/images/mers.png" alt="car-image">
+                            <img class="dark-theme-swiper-image" src="./assets/images/mers-dark.png" alt="car-image">
+                            <img class="light-theme-mob-swiper-image" src="./assets/images/mers-mobile.png" alt="car-image">
+                            <img class="dark-theme-mob-swiper-image" src="./assets/images/mers-mobile.png" alt="car-image">
+
+                        </div>
+
+                        <div class="content">
+                            <div class="text-content">
+                                <div class="title-row">
+                                    <h2>Автомобили</h2>
+                                    <span>из ОАЭ</span>
+                                </div>
+                                <p>Вы можете заказать у нас новые авто с доставкой в Регионы стран Восточной Европы, СНГ, Африки и Латинской Америки.</p>
+                                <a href="#">
+                                    <span class="arrow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M12.2929 5.33635C12.6834 4.94583 13.3166 4.94583 13.7071 5.33635L19.7071 11.3364C19.8946 11.5239 20 11.7782 20 12.0435C20 12.3087 19.8946 12.563 19.7071 12.7506L13.7071 18.7506C13.3166 19.1411 12.6834 19.1411 12.2929 18.7506C11.9024 18.36 11.9024 17.7269 12.2929 17.3364L16.5858 13.0435L5 13.0435C4.44772 13.0435 4 12.5957 4 12.0435C4 11.4912 4.44772 11.0435 5 11.0435L16.5858 11.0435L12.2929 6.75056C11.9024 6.36004 11.9024 5.72687 12.2929 5.33635Z" fill="white"/>
+                                        </svg>
+                                    </span>
+                                    Смотреть автомобили
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-container">
+                            <img class="light-theme-swiper-image" src="./assets/images/toyota.png" alt="car-image">
+                            <img class="dark-theme-swiper-image" src="./assets/images/toyota-dark.png" alt="car-image">
+                            <img class="light-theme-mob-swiper-image" src="./assets/images/mers-mobile.png" alt="car-image">
+                            <img class="dark-theme-mob-swiper-image" src="./assets/images/mers-mobile.png" alt="car-image">
+                        </div>
+                        <div class="content">
+                            <div class="text-content">
+                                <div class="title-row">
+                                    <h2>Проверяем</h2>
+                                    <span>авто до покупки</span>
+                                </div>
+
+                                <p>Каждую машину проверяем на предмет аварий, угона, мошенничества, залога, реального пробега и истории о предыдущих продажах.</p>
+                                <a href="#">
+                                    <span class="arrow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M12.2929 5.33635C12.6834 4.94583 13.3166 4.94583 13.7071 5.33635L19.7071 11.3364C19.8946 11.5239 20 11.7782 20 12.0435C20 12.3087 19.8946 12.563 19.7071 12.7506L13.7071 18.7506C13.3166 19.1411 12.6834 19.1411 12.2929 18.7506C11.9024 18.36 11.9024 17.7269 12.2929 17.3364L16.5858 13.0435L5 13.0435C4.44772 13.0435 4 12.5957 4 12.0435C4 11.4912 4.44772 11.0435 5 11.0435L16.5858 11.0435L12.2929 6.75056C11.9024 6.36004 11.9024 5.72687 12.2929 5.33635Z" fill="white"/>
+                                        </svg>
+                                    </span>
+                                    Смотреть автомобили
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-container">
+                            <img class="light-theme-swiper-image" src="./assets/images/lexus.png" alt="car-image">
+                            <img class="dark-theme-swiper-image" src="./assets/images/lexus-dark.png" alt="car-image">
+                            <img class="light-theme-mob-swiper-image" src="./assets/images/mers-mobile.png" alt="car-image">
+                            <img class="dark-theme-mob-swiper-image" src="./assets/images/mers-mobile.png" alt="car-image">
+                        </div>
+                        <div class="content">
+                            <div class="text-content">
+                                <div class="title-row">
+                                    <h2>Lexus LX</h2>
+                                    <span>2024</span>
+                                </div>
+                                <p>3.4 л / 299 л.с. / дизель / Автоматическая / Полный привод</p>
+                                <a href="#">
+                                    <span class="arrow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M12.2929 5.33635C12.6834 4.94583 13.3166 4.94583 13.7071 5.33635L19.7071 11.3364C19.8946 11.5239 20 11.7782 20 12.0435C20 12.3087 19.8946 12.563 19.7071 12.7506L13.7071 18.7506C13.3166 19.1411 12.6834 19.1411 12.2929 18.7506C11.9024 18.36 11.9024 17.7269 12.2929 17.3364L16.5858 13.0435L5 13.0435C4.44772 13.0435 4 12.5957 4 12.0435C4 11.4912 4.44772 11.0435 5 11.0435L16.5858 11.0435L12.2929 6.75056C11.9024 6.36004 11.9024 5.72687 12.2929 5.33635Z" fill="white"/>
+                                        </svg>
+                                    </span>
+                                    Смотреть автомобили
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation-container">
+                    <div class="content">
+                        <div class="custom-hero-navigation">
+                            <div class="arrow-prev arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                    <path d="M15.2437 17.7489C15.5854 17.4142 15.5854 16.8715 15.2437 16.5368L10.6124 12L15.2437 7.46323C15.5854 7.1285 15.5854 6.58579 15.2437 6.25105C14.902 5.91632 14.348 5.91632 14.0063 6.25105L8.75628 11.3939C8.41457 11.7286 8.41457 12.2714 8.75628 12.6061L14.0063 17.7489C14.348 18.0837 14.902 18.0837 15.2437 17.7489Z" fill="#828E96"/>
+                                </svg>
+                            </div>
+                            <div class="custom-hero-pagination"></div>
+                            <div class="arrow-next arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                    <path d="M9.75628 17.7489C9.41457 17.4142 9.41457 16.8715 9.75628 16.5368L14.3876 12L9.75628 7.46323C9.41457 7.1285 9.41457 6.58579 9.75628 6.25105C10.098 5.91632 10.652 5.91632 10.9937 6.25105L16.2437 11.3939C16.5854 11.7286 16.5854 12.2714 16.2437 12.6061L10.9937 17.7489C10.652 18.0837 10.098 18.0837 9.75628 17.7489Z" fill="#828E96"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="advantages-block">
+            <div class="content">
+                <h2>Преимущества</h2>
+                <div class="swiper advantages-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <span class="counter">01</span>
+                            <p>Авто проходят юридическую проверку перед продажей</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <span class="counter">02</span>
+                            <p>Полная оплата проходит только после осмотра авто</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <span class="counter">03</span>
+                            <p>Полное документальное сопровождение, возможность купить авто с полным НДС</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <span class="counter">04</span>
+                            <p>Возможность доставки автомобиля в любую страну мира</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-row">
+            <div class="content">
+                <div class="contact-container">
+                    <form>
+                        <p>Свяжитесь с нами</p>
+                        <input type="text" placeholder="Ваше имя:">
+                        <input type="tel" placeholder="Телефон:">
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                <path d="M20.9994 17.0201V19.7299C21.0036 20.7657 20.0722 21.6307 19.0264 21.5364C10 21.5435 3 14.4784 3.00706 5.51264C2.91287 4.4724 3.77358 3.54452 4.80811 3.54354H7.52325C7.96247 3.53923 8.38828 3.69446 8.72131 3.9803C9.66813 4.79295 10.2771 7.55123 10.0428 8.64774C9.85987 9.50382 8.9969 10.1028 8.41019 10.6883C9.69858 12.9496 11.5746 14.822 13.8405 16.1078C14.4272 15.5223 15.0273 14.661 15.8851 14.4784C16.9855 14.2442 19.7615 14.8541 20.5709 15.8075C20.8579 16.1456 21.0104 16.5771 20.9994 17.0201Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Заказать звонок</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="new-products">
+            <div class="content">
+                <div class="title-row">
+                    <div class="title">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                              <g clip-path="url(#clip0_129_38791)">
+                                <path d="M22.2366 13.073C22.0738 12.7389 22.0738 12.3481 22.2366 12.014L23.3487 9.73802C23.6345 9.15304 23.4054 8.44744 22.83 8.14228L20.5926 6.95543C20.2633 6.78054 20.0342 6.46453 19.9702 6.09786L19.5324 3.60233C19.4202 2.96186 18.8196 2.52524 18.1755 2.6169L15.6667 2.97151C15.2988 3.02338 14.9261 2.90276 14.6596 2.64464L12.8383 0.883664C12.3703 0.431357 11.6285 0.431357 11.1605 0.883664L9.33923 2.64464C9.07146 2.90276 8.69997 3.02458 8.33209 2.97151L5.8233 2.6169C5.18042 2.52524 4.57975 2.96186 4.46758 3.60233L4.02975 6.09786C3.96582 6.46453 3.73545 6.78054 3.40737 6.95543L1.16876 8.14228C0.594629 8.44744 0.36546 9.15304 0.651318 9.73802L1.76339 12.014C1.92622 12.3481 1.92622 12.7389 1.76339 13.073L0.651318 15.349C0.36546 15.934 0.594629 16.6396 1.16996 16.9448L3.40737 18.1316C3.73545 18.3065 3.96582 18.6225 4.02975 18.9892L4.46758 21.4847C4.57975 22.1252 5.18042 22.5618 5.8245 22.4702L8.3333 22.1155C8.70117 22.0637 9.07387 22.1843 9.34043 22.4424L11.1617 24.2034C11.6297 24.6557 12.3715 24.6557 12.8395 24.2034L14.6608 22.4424C14.9285 22.1843 15.3 22.0625 15.6679 22.1155L18.1767 22.4702C18.8208 22.5618 19.4214 22.1252 19.5336 21.4847L19.9715 18.9892C20.0354 18.6225 20.2658 18.3065 20.5938 18.1316L22.8312 16.9448C23.4054 16.6396 23.6357 15.934 23.3499 15.349L22.2366 13.073ZM9.58769 19.7804L12.5379 14.1574L7.71333 11.7499L14.4135 5.30662L11.4633 10.9249L16.2867 13.3324L9.58769 19.7804Z" fill="#18232A"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_129_38791">
+                                  <rect width="24" height="24" fill="white" transform="translate(0 0.543457)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                        </span>
+                        <h2>Новинки</h2>
+                        <div class="line"></div>
+                        <p>Самые свежие поступления в нашем каталоге!</p>
+                    </div>
+                    <a href="#" class="link-container">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                              <path d="M12.2929 5.83635C12.6834 5.44583 13.3166 5.44583 13.7071 5.83635L19.7071 11.8364C19.8946 12.0239 20 12.2782 20 12.5435C20 12.8087 19.8946 13.063 19.7071 13.2506L13.7071 19.2506C13.3166 19.6411 12.6834 19.6411 12.2929 19.2506C11.9024 18.86 11.9024 18.2269 12.2929 17.8364L16.5858 13.5435L5 13.5435C4.44772 13.5435 4 13.0957 4 12.5435C4 11.9912 4.44772 11.5435 5 11.5435L16.5858 11.5435L12.2929 7.25056C11.9024 6.86004 11.9024 6.22687 12.2929 5.83635Z" fill="white"/>
+                            </svg>
+                        </span>
+                        <span class="link-text">В каталог</span>
+                    </a>
+                </div>
+                <ul class="new-products-list">
+                    <li>
+                        <div class="img">
+                            <img src="./assets/images/new-product-image.png" alt="new-product-image">
+                            <div class="product-name">
+                                <p>Mercedes-Benz</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="params-list">
+                                <div class="params-card">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M22 9.54346L19.38 10.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M4.63 10.5435L2 9.54346" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M18.25 14.5435H15.75" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M8.25 14.5435H5.75" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M19.379 10.5435L18.54 6.53146C18.297 5.37346 17.276 4.54346 16.092 4.54346H8.012C6.851 4.54346 5.842 5.34346 5.578 6.47446L4.627 10.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.25 20.5435H5.5C6.328 20.5435 7 19.8715 7 19.0435V18.0435H17V19.0435C17 19.8715 17.672 20.5435 18.5 20.5435H20.75C21.44 20.5435 22 19.9835 22 19.2935V13.5435C22 11.8865 20.657 10.5435 19 10.5435H5C3.343 10.5435 2 11.8865 2 13.5435V19.2935C2 19.9835 2.56 20.5435 3.25 20.5435Z" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <div class="params-card-info">
+                                        <span>Модель:</span>
+                                        <p>S-Класс 63 e AMG </p>
+                                    </div>
+                                </div>
+                                <div class="params-card">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M11 12.5435H8C7.44772 12.5435 7 12.9912 7 13.5435V21.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M9 17.0435H7" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M10 8.54346H14" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M19 20.0435H15V20.5435C15 21.0957 14.5523 21.5435 14 21.5435H13C12.4477 21.5435 12 21.0957 12 20.5435V18.7935C12 17.827 12.7835 17.0435 13.75 17.0435H20.25C21.2165 17.0435 22 17.827 22 18.7935V20.5435C22 21.0957 21.5523 21.5435 21 21.5435H20C19.4477 21.5435 19 21.0957 19 20.5435V20.0435Z" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M13.1393 17.1592L13.7142 14.7018C13.8729 14.0233 14.4779 13.5435 15.1747 13.5435H18.8253C19.5221 13.5435 20.1271 14.0233 20.2858 14.7018L20.8607 17.1592" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M13.2391 16.666L12 16.0435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M20.7609 16.666L22 16.0435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M9 21.5435H5C3.89543 21.5435 3 20.648 3 19.5435V9.2439C2.99999 8.13601 3.61057 7.11831 4.58809 6.5969L10.5881 3.39648C11.4705 2.92578 12.5295 2.92578 13.4119 3.39648L19.4119 6.5969C20.3894 7.11831 21 8.13601 21 9.2439V10.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <div class="params-card-info">
+                                        <span>Год выпуска:</span>
+                                        <p>2024</p>
+                                    </div>
+                                </div>
+                                <div class="params-card">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M1 9.54346V17.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M12 3.54346V7.54346" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M9 3.54346H15" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M20 9.54346V11.5435H18L16 7.54346H8L6 9.54346H4V17.5435H7L8.724 20.9905C8.893 21.3295 9.239 21.5435 9.618 21.5435H16C16.552 21.5435 17 21.0955 17 20.5435V17.5435H20V19.5435H22C22.552 19.5435 23 19.0955 23 18.5435V10.5435C23 9.99146 22.552 9.54346 22 9.54346H20Z" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M4 13.5435H1" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <div class="params-card-info">
+                                        <span>Двигатель:</span>
+                                        <p>4.0 л / 802 л.с. / Гибрид</p>
+                                    </div>
+                                </div>
+                                <div class="params-card">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M20.21 19.4036L21.64 21.5436" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M4 7.54346V17.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M21.4142 4.12924C22.1952 4.91029 22.1952 6.17662 21.4142 6.95767C20.6331 7.73872 19.3668 7.73872 18.5858 6.95767C17.8047 6.17662 17.8047 4.91029 18.5858 4.12924C19.3668 3.34819 20.6331 3.34819 21.4142 4.12924" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M20 7.54346V10.5435C20 11.6485 19.105 12.5435 18 12.5435H4" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M13.4142 4.12924C14.1952 4.91029 14.1952 6.17662 13.4142 6.95767C12.6331 7.73872 11.3668 7.73872 10.5858 6.95767C9.80471 6.17662 9.80471 4.91029 10.5858 4.12924C11.3668 3.34819 12.6331 3.34819 13.4142 4.12924" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M5.41422 4.12924C6.19527 4.91029 6.19527 6.17662 5.41422 6.95767C4.63317 7.73872 3.36684 7.73872 2.58579 6.95767C1.80474 6.17662 1.80474 4.91029 2.58579 4.12924C3.36684 3.34819 4.63317 3.34819 5.41422 4.12924" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M13.4142 18.1292C14.1952 18.9103 14.1952 20.1766 13.4142 20.9577C12.6331 21.7387 11.3668 21.7387 10.5858 20.9577C9.80471 20.1766 9.80471 18.9103 10.5858 18.1292C11.3668 17.3482 12.6331 17.3482 13.4142 18.1292" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M5.41422 18.1292C6.19527 18.9103 6.19527 20.1766 5.41422 20.9577C4.63317 21.7387 3.36684 21.7387 2.58579 20.9577C1.80474 20.1766 1.80474 18.9103 2.58579 18.1292C3.36684 17.3482 4.63317 17.3482 5.41422 18.1292" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M12 7.54346V17.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M18.071 19.4025H20.21C20.999 19.4025 21.64 18.7615 21.64 17.9725C21.64 17.1835 20.999 16.5435 20.21 16.5435H18.071V16.5475V21.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <div class="params-card-info">
+                                        <span>Коробка передач</span>
+                                        <p>Автомат 8-ми скоростная</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <button class="price-btn">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                          <path d="M8.29289 0.83635C8.68342 0.445826 9.31658 0.445826 9.70711 0.83635L15.7071 6.83635C15.8946 7.02389 16 7.27824 16 7.54346C16 7.80867 15.8946 8.06303 15.7071 8.25057L9.70711 14.2506C9.31658 14.6411 8.68342 14.6411 8.29289 14.2506C7.90237 13.86 7.90237 13.2269 8.29289 12.8364L12.5858 8.54346L1 8.54346C0.447715 8.54346 0 8.09574 0 7.54346C0 6.99117 0.447715 6.54346 1 6.54346L12.5858 6.54346L8.29289 2.25056C7.90237 1.86004 7.90237 1.22687 8.29289 0.83635Z" fill="white"/>
+                                        </svg>
+                                    </span>
+                                    <span class="text">Узнать цену</span>
+                                </button>
+                                <a href="#" class="product-link">
+                                    <span class="text">Подробнее</span>
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M14 5.54346C13.4477 5.54346 13 5.09574 13 4.54346C13 3.99117 13.4477 3.54346 14 3.54346H20C20.2652 3.54346 20.5196 3.64881 20.7071 3.83635C20.8946 4.02389 21 4.27824 21 4.54346L21 10.5435C21 11.0957 20.5523 11.5435 20 11.5435C19.4477 11.5435 19 11.0957 19 10.5435L19 6.95767L9.70711 16.2506C9.31658 16.6411 8.68342 16.6411 8.29289 16.2506C7.90237 15.86 7.90237 15.2269 8.29289 14.8363L17.5858 5.54346H14ZM3 7.54346C3 6.43889 3.89543 5.54346 5 5.54346H10C10.5523 5.54346 11 5.99117 11 6.54346C11 7.09574 10.5523 7.54346 10 7.54346H5V19.5435H17V14.5435C17 13.9912 17.4477 13.5435 18 13.5435C18.5523 13.5435 19 13.9912 19 14.5435V19.5435C19 20.648 18.1046 21.5435 17 21.5435H5C3.89543 21.5435 3 20.648 3 19.5435V7.54346Z" fill="#828E96"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="./assets/images/new-product-image.png" alt="new-product-image">
+                            <div class="product-name">
+                                <p>Mercedes-Benz</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="params-list">
+                                <div class="params-card">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M22 9.54346L19.38 10.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M4.63 10.5435L2 9.54346" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M18.25 14.5435H15.75" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M8.25 14.5435H5.75" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M19.379 10.5435L18.54 6.53146C18.297 5.37346 17.276 4.54346 16.092 4.54346H8.012C6.851 4.54346 5.842 5.34346 5.578 6.47446L4.627 10.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.25 20.5435H5.5C6.328 20.5435 7 19.8715 7 19.0435V18.0435H17V19.0435C17 19.8715 17.672 20.5435 18.5 20.5435H20.75C21.44 20.5435 22 19.9835 22 19.2935V13.5435C22 11.8865 20.657 10.5435 19 10.5435H5C3.343 10.5435 2 11.8865 2 13.5435V19.2935C2 19.9835 2.56 20.5435 3.25 20.5435Z" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <div class="params-card-info">
+                                        <span>Модель:</span>
+                                        <p>S-Класс 63 e AMG </p>
+                                    </div>
+                                </div>
+                                <div class="params-card">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M11 12.5435H8C7.44772 12.5435 7 12.9912 7 13.5435V21.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M9 17.0435H7" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M10 8.54346H14" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M19 20.0435H15V20.5435C15 21.0957 14.5523 21.5435 14 21.5435H13C12.4477 21.5435 12 21.0957 12 20.5435V18.7935C12 17.827 12.7835 17.0435 13.75 17.0435H20.25C21.2165 17.0435 22 17.827 22 18.7935V20.5435C22 21.0957 21.5523 21.5435 21 21.5435H20C19.4477 21.5435 19 21.0957 19 20.5435V20.0435Z" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M13.1393 17.1592L13.7142 14.7018C13.8729 14.0233 14.4779 13.5435 15.1747 13.5435H18.8253C19.5221 13.5435 20.1271 14.0233 20.2858 14.7018L20.8607 17.1592" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M13.2391 16.666L12 16.0435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M20.7609 16.666L22 16.0435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M9 21.5435H5C3.89543 21.5435 3 20.648 3 19.5435V9.2439C2.99999 8.13601 3.61057 7.11831 4.58809 6.5969L10.5881 3.39648C11.4705 2.92578 12.5295 2.92578 13.4119 3.39648L19.4119 6.5969C20.3894 7.11831 21 8.13601 21 9.2439V10.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <div class="params-card-info">
+                                        <span>Год выпуска:</span>
+                                        <p>2024</p>
+                                    </div>
+                                </div>
+                                <div class="params-card">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M1 9.54346V17.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M12 3.54346V7.54346" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M9 3.54346H15" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M20 9.54346V11.5435H18L16 7.54346H8L6 9.54346H4V17.5435H7L8.724 20.9905C8.893 21.3295 9.239 21.5435 9.618 21.5435H16C16.552 21.5435 17 21.0955 17 20.5435V17.5435H20V19.5435H22C22.552 19.5435 23 19.0955 23 18.5435V10.5435C23 9.99146 22.552 9.54346 22 9.54346H20Z" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M4 13.5435H1" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <div class="params-card-info">
+                                        <span>Двигатель:</span>
+                                        <p>4.0 л / 802 л.с. / Гибрид</p>
+                                    </div>
+                                </div>
+                                <div class="params-card">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M20.21 19.4036L21.64 21.5436" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M4 7.54346V17.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M21.4142 4.12924C22.1952 4.91029 22.1952 6.17662 21.4142 6.95767C20.6331 7.73872 19.3668 7.73872 18.5858 6.95767C17.8047 6.17662 17.8047 4.91029 18.5858 4.12924C19.3668 3.34819 20.6331 3.34819 21.4142 4.12924" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M20 7.54346V10.5435C20 11.6485 19.105 12.5435 18 12.5435H4" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M13.4142 4.12924C14.1952 4.91029 14.1952 6.17662 13.4142 6.95767C12.6331 7.73872 11.3668 7.73872 10.5858 6.95767C9.80471 6.17662 9.80471 4.91029 10.5858 4.12924C11.3668 3.34819 12.6331 3.34819 13.4142 4.12924" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M5.41422 4.12924C6.19527 4.91029 6.19527 6.17662 5.41422 6.95767C4.63317 7.73872 3.36684 7.73872 2.58579 6.95767C1.80474 6.17662 1.80474 4.91029 2.58579 4.12924C3.36684 3.34819 4.63317 3.34819 5.41422 4.12924" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M13.4142 18.1292C14.1952 18.9103 14.1952 20.1766 13.4142 20.9577C12.6331 21.7387 11.3668 21.7387 10.5858 20.9577C9.80471 20.1766 9.80471 18.9103 10.5858 18.1292C11.3668 17.3482 12.6331 17.3482 13.4142 18.1292" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M5.41422 18.1292C6.19527 18.9103 6.19527 20.1766 5.41422 20.9577C4.63317 21.7387 3.36684 21.7387 2.58579 20.9577C1.80474 20.1766 1.80474 18.9103 2.58579 18.1292C3.36684 17.3482 4.63317 17.3482 5.41422 18.1292" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M12 7.54346V17.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M18.071 19.4025H20.21C20.999 19.4025 21.64 18.7615 21.64 17.9725C21.64 17.1835 20.999 16.5435 20.21 16.5435H18.071V16.5475V21.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <div class="params-card-info">
+                                        <span>Коробка передач</span>
+                                        <p>Автомат 8-ми скоростная</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <button class="price-btn">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                          <path d="M8.29289 0.83635C8.68342 0.445826 9.31658 0.445826 9.70711 0.83635L15.7071 6.83635C15.8946 7.02389 16 7.27824 16 7.54346C16 7.80867 15.8946 8.06303 15.7071 8.25057L9.70711 14.2506C9.31658 14.6411 8.68342 14.6411 8.29289 14.2506C7.90237 13.86 7.90237 13.2269 8.29289 12.8364L12.5858 8.54346L1 8.54346C0.447715 8.54346 0 8.09574 0 7.54346C0 6.99117 0.447715 6.54346 1 6.54346L12.5858 6.54346L8.29289 2.25056C7.90237 1.86004 7.90237 1.22687 8.29289 0.83635Z" fill="white"/>
+                                        </svg>
+                                    </span>
+                                    <span class="text">Узнать цену</span>
+                                </button>
+                                <a href="#" class="product-link">
+                                    <span class="text">Подробнее</span>
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M14 5.54346C13.4477 5.54346 13 5.09574 13 4.54346C13 3.99117 13.4477 3.54346 14 3.54346H20C20.2652 3.54346 20.5196 3.64881 20.7071 3.83635C20.8946 4.02389 21 4.27824 21 4.54346L21 10.5435C21 11.0957 20.5523 11.5435 20 11.5435C19.4477 11.5435 19 11.0957 19 10.5435L19 6.95767L9.70711 16.2506C9.31658 16.6411 8.68342 16.6411 8.29289 16.2506C7.90237 15.86 7.90237 15.2269 8.29289 14.8363L17.5858 5.54346H14ZM3 7.54346C3 6.43889 3.89543 5.54346 5 5.54346H10C10.5523 5.54346 11 5.99117 11 6.54346C11 7.09574 10.5523 7.54346 10 7.54346H5V19.5435H17V14.5435C17 13.9912 17.4477 13.5435 18 13.5435C18.5523 13.5435 19 13.9912 19 14.5435V19.5435C19 20.648 18.1046 21.5435 17 21.5435H5C3.89543 21.5435 3 20.648 3 19.5435V7.54346Z" fill="#828E96"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="./assets/images/new-product-image.png" alt="new-product-image">
+                            <div class="product-name">
+                                <p>Mercedes-Benz</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="params-list">
+                                <div class="params-card">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M22 9.54346L19.38 10.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M4.63 10.5435L2 9.54346" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M18.25 14.5435H15.75" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M8.25 14.5435H5.75" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M19.379 10.5435L18.54 6.53146C18.297 5.37346 17.276 4.54346 16.092 4.54346H8.012C6.851 4.54346 5.842 5.34346 5.578 6.47446L4.627 10.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.25 20.5435H5.5C6.328 20.5435 7 19.8715 7 19.0435V18.0435H17V19.0435C17 19.8715 17.672 20.5435 18.5 20.5435H20.75C21.44 20.5435 22 19.9835 22 19.2935V13.5435C22 11.8865 20.657 10.5435 19 10.5435H5C3.343 10.5435 2 11.8865 2 13.5435V19.2935C2 19.9835 2.56 20.5435 3.25 20.5435Z" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <div class="params-card-info">
+                                        <span>Модель:</span>
+                                        <p>S-Класс 63 e AMG </p>
+                                    </div>
+                                </div>
+                                <div class="params-card">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M11 12.5435H8C7.44772 12.5435 7 12.9912 7 13.5435V21.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M9 17.0435H7" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M10 8.54346H14" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M19 20.0435H15V20.5435C15 21.0957 14.5523 21.5435 14 21.5435H13C12.4477 21.5435 12 21.0957 12 20.5435V18.7935C12 17.827 12.7835 17.0435 13.75 17.0435H20.25C21.2165 17.0435 22 17.827 22 18.7935V20.5435C22 21.0957 21.5523 21.5435 21 21.5435H20C19.4477 21.5435 19 21.0957 19 20.5435V20.0435Z" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M13.1393 17.1592L13.7142 14.7018C13.8729 14.0233 14.4779 13.5435 15.1747 13.5435H18.8253C19.5221 13.5435 20.1271 14.0233 20.2858 14.7018L20.8607 17.1592" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M13.2391 16.666L12 16.0435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M20.7609 16.666L22 16.0435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M9 21.5435H5C3.89543 21.5435 3 20.648 3 19.5435V9.2439C2.99999 8.13601 3.61057 7.11831 4.58809 6.5969L10.5881 3.39648C11.4705 2.92578 12.5295 2.92578 13.4119 3.39648L19.4119 6.5969C20.3894 7.11831 21 8.13601 21 9.2439V10.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <div class="params-card-info">
+                                        <span>Год выпуска:</span>
+                                        <p>2024</p>
+                                    </div>
+                                </div>
+                                <div class="params-card">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M1 9.54346V17.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M12 3.54346V7.54346" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M9 3.54346H15" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M20 9.54346V11.5435H18L16 7.54346H8L6 9.54346H4V17.5435H7L8.724 20.9905C8.893 21.3295 9.239 21.5435 9.618 21.5435H16C16.552 21.5435 17 21.0955 17 20.5435V17.5435H20V19.5435H22C22.552 19.5435 23 19.0955 23 18.5435V10.5435C23 9.99146 22.552 9.54346 22 9.54346H20Z" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M4 13.5435H1" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <div class="params-card-info">
+                                        <span>Двигатель:</span>
+                                        <p>4.0 л / 802 л.с. / Гибрид</p>
+                                    </div>
+                                </div>
+                                <div class="params-card">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M20.21 19.4036L21.64 21.5436" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M4 7.54346V17.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M21.4142 4.12924C22.1952 4.91029 22.1952 6.17662 21.4142 6.95767C20.6331 7.73872 19.3668 7.73872 18.5858 6.95767C17.8047 6.17662 17.8047 4.91029 18.5858 4.12924C19.3668 3.34819 20.6331 3.34819 21.4142 4.12924" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M20 7.54346V10.5435C20 11.6485 19.105 12.5435 18 12.5435H4" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M13.4142 4.12924C14.1952 4.91029 14.1952 6.17662 13.4142 6.95767C12.6331 7.73872 11.3668 7.73872 10.5858 6.95767C9.80471 6.17662 9.80471 4.91029 10.5858 4.12924C11.3668 3.34819 12.6331 3.34819 13.4142 4.12924" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M5.41422 4.12924C6.19527 4.91029 6.19527 6.17662 5.41422 6.95767C4.63317 7.73872 3.36684 7.73872 2.58579 6.95767C1.80474 6.17662 1.80474 4.91029 2.58579 4.12924C3.36684 3.34819 4.63317 3.34819 5.41422 4.12924" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M13.4142 18.1292C14.1952 18.9103 14.1952 20.1766 13.4142 20.9577C12.6331 21.7387 11.3668 21.7387 10.5858 20.9577C9.80471 20.1766 9.80471 18.9103 10.5858 18.1292C11.3668 17.3482 12.6331 17.3482 13.4142 18.1292" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M5.41422 18.1292C6.19527 18.9103 6.19527 20.1766 5.41422 20.9577C4.63317 21.7387 3.36684 21.7387 2.58579 20.9577C1.80474 20.1766 1.80474 18.9103 2.58579 18.1292C3.36684 17.3482 4.63317 17.3482 5.41422 18.1292" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M12 7.54346V17.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M18.071 19.4025H20.21C20.999 19.4025 21.64 18.7615 21.64 17.9725C21.64 17.1835 20.999 16.5435 20.21 16.5435H18.071V16.5475V21.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <div class="params-card-info">
+                                        <span>Коробка передач</span>
+                                        <p>Автомат 8-ми скоростная</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <button class="price-btn">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                          <path d="M8.29289 0.83635C8.68342 0.445826 9.31658 0.445826 9.70711 0.83635L15.7071 6.83635C15.8946 7.02389 16 7.27824 16 7.54346C16 7.80867 15.8946 8.06303 15.7071 8.25057L9.70711 14.2506C9.31658 14.6411 8.68342 14.6411 8.29289 14.2506C7.90237 13.86 7.90237 13.2269 8.29289 12.8364L12.5858 8.54346L1 8.54346C0.447715 8.54346 0 8.09574 0 7.54346C0 6.99117 0.447715 6.54346 1 6.54346L12.5858 6.54346L8.29289 2.25056C7.90237 1.86004 7.90237 1.22687 8.29289 0.83635Z" fill="white"/>
+                                        </svg>
+                                    </span>
+                                    <span class="text">Узнать цену</span>
+                                </button>
+                                <a href="#" class="product-link">
+                                    <span class="text">Подробнее</span>
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M14 5.54346C13.4477 5.54346 13 5.09574 13 4.54346C13 3.99117 13.4477 3.54346 14 3.54346H20C20.2652 3.54346 20.5196 3.64881 20.7071 3.83635C20.8946 4.02389 21 4.27824 21 4.54346L21 10.5435C21 11.0957 20.5523 11.5435 20 11.5435C19.4477 11.5435 19 11.0957 19 10.5435L19 6.95767L9.70711 16.2506C9.31658 16.6411 8.68342 16.6411 8.29289 16.2506C7.90237 15.86 7.90237 15.2269 8.29289 14.8363L17.5858 5.54346H14ZM3 7.54346C3 6.43889 3.89543 5.54346 5 5.54346H10C10.5523 5.54346 11 5.99117 11 6.54346C11 7.09574 10.5523 7.54346 10 7.54346H5V19.5435H17V14.5435C17 13.9912 17.4477 13.5435 18 13.5435C18.5523 13.5435 19 13.9912 19 14.5435V19.5435C19 20.648 18.1046 21.5435 17 21.5435H5C3.89543 21.5435 3 20.648 3 19.5435V7.54346Z" fill="#828E96"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="./assets/images/new-product-image.png" alt="new-product-image">
+                            <div class="product-name">
+                                <p>Mercedes-Benz</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="params-list">
+                                <div class="params-card">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M22 9.54346L19.38 10.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M4.63 10.5435L2 9.54346" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M18.25 14.5435H15.75" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M8.25 14.5435H5.75" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M19.379 10.5435L18.54 6.53146C18.297 5.37346 17.276 4.54346 16.092 4.54346H8.012C6.851 4.54346 5.842 5.34346 5.578 6.47446L4.627 10.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.25 20.5435H5.5C6.328 20.5435 7 19.8715 7 19.0435V18.0435H17V19.0435C17 19.8715 17.672 20.5435 18.5 20.5435H20.75C21.44 20.5435 22 19.9835 22 19.2935V13.5435C22 11.8865 20.657 10.5435 19 10.5435H5C3.343 10.5435 2 11.8865 2 13.5435V19.2935C2 19.9835 2.56 20.5435 3.25 20.5435Z" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <div class="params-card-info">
+                                        <span>Модель:</span>
+                                        <p>S-Класс 63 e AMG </p>
+                                    </div>
+                                </div>
+                                <div class="params-card">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M11 12.5435H8C7.44772 12.5435 7 12.9912 7 13.5435V21.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M9 17.0435H7" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M10 8.54346H14" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M19 20.0435H15V20.5435C15 21.0957 14.5523 21.5435 14 21.5435H13C12.4477 21.5435 12 21.0957 12 20.5435V18.7935C12 17.827 12.7835 17.0435 13.75 17.0435H20.25C21.2165 17.0435 22 17.827 22 18.7935V20.5435C22 21.0957 21.5523 21.5435 21 21.5435H20C19.4477 21.5435 19 21.0957 19 20.5435V20.0435Z" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M13.1393 17.1592L13.7142 14.7018C13.8729 14.0233 14.4779 13.5435 15.1747 13.5435H18.8253C19.5221 13.5435 20.1271 14.0233 20.2858 14.7018L20.8607 17.1592" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M13.2391 16.666L12 16.0435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M20.7609 16.666L22 16.0435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M9 21.5435H5C3.89543 21.5435 3 20.648 3 19.5435V9.2439C2.99999 8.13601 3.61057 7.11831 4.58809 6.5969L10.5881 3.39648C11.4705 2.92578 12.5295 2.92578 13.4119 3.39648L19.4119 6.5969C20.3894 7.11831 21 8.13601 21 9.2439V10.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <div class="params-card-info">
+                                        <span>Год выпуска:</span>
+                                        <p>2024</p>
+                                    </div>
+                                </div>
+                                <div class="params-card">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M1 9.54346V17.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M12 3.54346V7.54346" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M9 3.54346H15" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M20 9.54346V11.5435H18L16 7.54346H8L6 9.54346H4V17.5435H7L8.724 20.9905C8.893 21.3295 9.239 21.5435 9.618 21.5435H16C16.552 21.5435 17 21.0955 17 20.5435V17.5435H20V19.5435H22C22.552 19.5435 23 19.0955 23 18.5435V10.5435C23 9.99146 22.552 9.54346 22 9.54346H20Z" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M4 13.5435H1" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <div class="params-card-info">
+                                        <span>Двигатель:</span>
+                                        <p>4.0 л / 802 л.с. / Гибрид</p>
+                                    </div>
+                                </div>
+                                <div class="params-card">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M20.21 19.4036L21.64 21.5436" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M4 7.54346V17.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M21.4142 4.12924C22.1952 4.91029 22.1952 6.17662 21.4142 6.95767C20.6331 7.73872 19.3668 7.73872 18.5858 6.95767C17.8047 6.17662 17.8047 4.91029 18.5858 4.12924C19.3668 3.34819 20.6331 3.34819 21.4142 4.12924" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M20 7.54346V10.5435C20 11.6485 19.105 12.5435 18 12.5435H4" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M13.4142 4.12924C14.1952 4.91029 14.1952 6.17662 13.4142 6.95767C12.6331 7.73872 11.3668 7.73872 10.5858 6.95767C9.80471 6.17662 9.80471 4.91029 10.5858 4.12924C11.3668 3.34819 12.6331 3.34819 13.4142 4.12924" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M5.41422 4.12924C6.19527 4.91029 6.19527 6.17662 5.41422 6.95767C4.63317 7.73872 3.36684 7.73872 2.58579 6.95767C1.80474 6.17662 1.80474 4.91029 2.58579 4.12924C3.36684 3.34819 4.63317 3.34819 5.41422 4.12924" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M13.4142 18.1292C14.1952 18.9103 14.1952 20.1766 13.4142 20.9577C12.6331 21.7387 11.3668 21.7387 10.5858 20.9577C9.80471 20.1766 9.80471 18.9103 10.5858 18.1292C11.3668 17.3482 12.6331 17.3482 13.4142 18.1292" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M5.41422 18.1292C6.19527 18.9103 6.19527 20.1766 5.41422 20.9577C4.63317 21.7387 3.36684 21.7387 2.58579 20.9577C1.80474 20.1766 1.80474 18.9103 2.58579 18.1292C3.36684 17.3482 4.63317 17.3482 5.41422 18.1292" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M12 7.54346V17.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M18.071 19.4025H20.21C20.999 19.4025 21.64 18.7615 21.64 17.9725C21.64 17.1835 20.999 16.5435 20.21 16.5435H18.071V16.5475V21.5435" stroke="#828E96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <div class="params-card-info">
+                                        <span>Коробка передач</span>
+                                        <p>Автомат 8-ми скоростная</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <button class="price-btn">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                          <path d="M8.29289 0.83635C8.68342 0.445826 9.31658 0.445826 9.70711 0.83635L15.7071 6.83635C15.8946 7.02389 16 7.27824 16 7.54346C16 7.80867 15.8946 8.06303 15.7071 8.25057L9.70711 14.2506C9.31658 14.6411 8.68342 14.6411 8.29289 14.2506C7.90237 13.86 7.90237 13.2269 8.29289 12.8364L12.5858 8.54346L1 8.54346C0.447715 8.54346 0 8.09574 0 7.54346C0 6.99117 0.447715 6.54346 1 6.54346L12.5858 6.54346L8.29289 2.25056C7.90237 1.86004 7.90237 1.22687 8.29289 0.83635Z" fill="white"/>
+                                        </svg>
+                                    </span>
+                                    <span class="text">Узнать цену</span>
+                                </button>
+                                <a href="#" class="product-link">
+                                    <span class="text">Подробнее</span>
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                          <path d="M14 5.54346C13.4477 5.54346 13 5.09574 13 4.54346C13 3.99117 13.4477 3.54346 14 3.54346H20C20.2652 3.54346 20.5196 3.64881 20.7071 3.83635C20.8946 4.02389 21 4.27824 21 4.54346L21 10.5435C21 11.0957 20.5523 11.5435 20 11.5435C19.4477 11.5435 19 11.0957 19 10.5435L19 6.95767L9.70711 16.2506C9.31658 16.6411 8.68342 16.6411 8.29289 16.2506C7.90237 15.86 7.90237 15.2269 8.29289 14.8363L17.5858 5.54346H14ZM3 7.54346C3 6.43889 3.89543 5.54346 5 5.54346H10C10.5523 5.54346 11 5.99117 11 6.54346C11 7.09574 10.5523 7.54346 10 7.54346H5V19.5435H17V14.5435C17 13.9912 17.4477 13.5435 18 13.5435C18.5523 13.5435 19 13.9912 19 14.5435V19.5435C19 20.648 18.1046 21.5435 17 21.5435H5C3.89543 21.5435 3 20.648 3 19.5435V7.54346Z" fill="#828E96"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
     <footer></footer>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

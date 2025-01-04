@@ -138,3 +138,60 @@ if (advantagesSwiper) {
         }
     });
 }
+
+const hotOffersSwiper = document.querySelector('.hot-offers-swiper');
+if (hotOffersSwiper) {
+    const swiper = new Swiper(hotOffersSwiper, {
+        spaceBetween: 50,
+        slidesPerView: "auto",
+        centeredSlides: true,
+        lazy: true,
+        loop: true,
+        breakpoints: {
+            1550: {
+                spaceBetween: 50
+            }
+        },
+        pagination: {
+            el: '.hot-offers-swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.hot-offers-swiper-nav .arrow-next',
+            prevEl: '.hot-offers-swiper-nav .arrow-prev',
+        },
+    });
+}
+
+const callbackManagerBtns = document.querySelectorAll('.callback-manager-btn');
+const callbackManagerModal = document.querySelector('.callback-manager-modal');
+const callbackManagerClose = document.querySelector('.callback-manager-modal .close-btn');
+
+const showCallbackManagerModal = () => {
+    overlay.classList.add('open');
+    callbackManagerModal.classList.add('active');
+}
+const hideCallbackManagerModal = () => {
+    overlay.classList.remove('open');
+    callbackManagerModal.classList.remove('active');
+}
+callbackManagerBtns.forEach(btn => {
+    btn.addEventListener('click', (e)=> {
+        showCallbackManagerModal();
+    })
+})
+callbackManagerClose.addEventListener('click', (e)=> {
+    hideCallbackManagerModal();
+})
+overlay.addEventListener('click', (e)=> {
+    hideCallbackManagerModal();
+})
+
+// filter
+
+const filterItems = document.querySelectorAll('.filter li');
+
+filterItems?.forEach(item => {
+    item.addEventListener('click', (e)=> {
+        item.classList.toggle('active');
+    })
+})

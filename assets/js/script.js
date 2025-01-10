@@ -195,3 +195,63 @@ filterItems?.forEach(item => {
         item.classList.toggle('active');
     })
 })
+
+const thumbsGallery = document.querySelector('.gallery-mini');
+
+if (thumbsGallery) {
+    let swiper4 = new Swiper(".gallery-mini", {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        freeMode: true,
+        direction: "horizontal",
+        breakpoints: {
+            768: {
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 3,
+                direction: "vertical",
+            }
+        },
+    });
+    let swiper5 = new Swiper(".gallery", {
+        spaceBetween: 10,
+        direction: 'horizontal',
+        navigation: {
+            nextEl: ".gallery-btn-next",
+            prevEl: ".gallery-btn-prev",
+        },
+        thumbs: {
+            swiper: swiper4,
+        },
+    });
+}
+
+Fancybox.bind('[data-fancybox="gallery"]', {
+});
+
+document.getElementById('openGallery').addEventListener('click', function () {
+
+    const galleryElements = document.querySelectorAll('[data-fancybox="gallery"]');
+
+    const galleryItems = Array.from(galleryElements).map(el => ({
+        src: el.dataset.src,
+    }));
+
+    Fancybox.show(galleryItems, {
+        infinite: true,
+        keyboard: true,
+    });
+});
+
+document.querySelector('.gallery-navigation .zoom').addEventListener('click', (e) => {
+    const galleryActiveSlide = document.querySelectorAll('.gallery .swiper-slide-active .gallery-content');
+    const galleryItems = Array.from(galleryActiveSlide).map(el => ({
+        src: el.dataset.src,
+    }));
+
+    Fancybox.show(galleryItems, {
+        infinite: true,
+        keyboard: true,
+    });
+})

@@ -230,7 +230,7 @@ if (thumbsGallery) {
 Fancybox.bind('[data-fancybox="gallery"]', {
 });
 
-document.getElementById('openGallery').addEventListener('click', function () {
+document.getElementById('openGallery')?.addEventListener('click', function () {
 
     const galleryElements = document.querySelectorAll('[data-fancybox="gallery"]');
 
@@ -244,7 +244,7 @@ document.getElementById('openGallery').addEventListener('click', function () {
     });
 });
 
-document.querySelector('.gallery-navigation .zoom').addEventListener('click', (e) => {
+document.querySelector('.gallery-navigation .zoom')?.addEventListener('click', (e) => {
     const galleryActiveSlide = document.querySelectorAll('.gallery .swiper-slide-active .gallery-content');
     const galleryItems = Array.from(galleryActiveSlide).map(el => ({
         src: el.dataset.src,

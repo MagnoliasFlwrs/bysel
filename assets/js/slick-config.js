@@ -5,7 +5,7 @@ $(document).ready(function () {
     $slider.slick({
         dots: false,
         infinite: true,
-        speed: 500,
+        speed: 1000,
         slidesToShow: 3,
         variableWidth: true,
         centerMode: false,

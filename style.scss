@@ -2878,27 +2878,37 @@ body {
             margin-right: 20px;
           }
           &.mini-slide {
-            width: 435px;
+            width: 430px;
           }
           &.maxi-slide {
-            width: 750px;
+            width: 765px;
             .offer-card {
               .info {
                 .params-list {
+                  gap: 20px;
                   .params-card {
                     &:nth-child(3) {
-                      display: flex;
+                      //display: flex;
+                      position: static;
+                      opacity: 1;
+                      visibility: visible;
                     }
                     &:last-child {
-                      display: flex;
+                      //display: flex;
+                      position: static;
+                      opacity: 1;
+                      visibility: visible;
                     }
                   }
                 }
                 .buttons {
                   .product-link {
-
+                    width: 191px;
                     .text {
-                      display: block;
+                      //display: block;
+                      position: static;
+                      opacity: 1;
+                      visibility: visible;
                     }
                   }
                 }
@@ -2920,27 +2930,65 @@ body {
                 height: 75px;
                 flex-wrap: nowrap;
                 overflow: hidden;
+                position: relative;
                 @media (max-width: 1110px) {
                   height: fit-content;
                 }
                 .params-card {
+                  transition: 1s ease;
+                  width: 160px;
+                  p {
+                    transition: 1s ease;
+                  }
+                  .params-card-info {
+                    width: 126px;
+
+                  }
                   &:nth-child(3) {
-                    display: none;
+                    transition: 1s ease;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                    //display: none;
+
                   }
                   &:last-child {
-                    display: none;
+                    //display: none;
+                    transition: 1s ease;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    visibility: hidden;
                   }
                 }
               }
               .buttons {
                 flex-wrap: nowrap;
                 overflow: hidden;
+                .price-btn {
+                  height: 74px;
+                  overflow: hidden;
+                  .text {
+                    width: 114px;
+
+                  }
+                }
                 .product-link {
                   min-width: 74px;
                   justify-content: center;
                   width: fit-content;
+                  position: relative;
+                  height: 74px;
                   .text {
-                    display: none;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                    //display: none;
                   }
                 }
               }
@@ -4071,6 +4119,7 @@ body {
                 box-shadow: 0px 7px 22px -15px rgba(0, 0, 0, 0.25);
                 border: none;
                 cursor: pointer;
+                height: 74px;
                 &:hover {
                   background: #FF0033;
                   .text {
@@ -4104,6 +4153,7 @@ body {
                 border-radius: 20px;
                 background: #FFF;
                 box-shadow: 0px 7px 22px -15px rgba(0, 0, 0, 0.25);
+                position: relative;
                 @media (max-width: 768px) {
                   background: #FFF;
                   width: fit-content;

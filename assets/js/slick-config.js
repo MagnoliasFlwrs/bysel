@@ -24,7 +24,7 @@ $(document).ready(function () {
     }
 
 
-    $slider.on('beforeChange', function () {
+    $slider.on('beforeChange', function (event, slick, currentSlide) {
         // $('.slick-slide').removeClass('maxi-slide');
     });
 
